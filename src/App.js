@@ -45,7 +45,7 @@ function App() {
 
   return (
     <div style={{ padding: "10px", paddingLeft: "30px" }}>
-      <Map width="35vw" height="25vw"/>
+      <Map width="35vw" height="55vh"/>
       <OperatingStatus />
       <Stats />
       <OnOffSwitch />
