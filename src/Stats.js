@@ -4,15 +4,15 @@ import IconButton from '@material-ui/core/IconButton';
 import Card from '@material-ui/core/Card';
 function Stats() {
   return (
-    <div style={{ display: "inline-block", position: "fixed", top: "80px", paddingLeft:"15vw", right:"10vw" }}>
-    <Card style={{ padding: "10px", paddingRight: "8vw" }}>
+    <div className="statusCard">
+    <Card>
         <IconButton>
-          <Battery80Icon style={{ width:"5vw", height:"5vw" }} />
+          <Battery80Icon/>
         </IconButton>
         80%
         <br />
         <IconButton>
-          <DeleteIcon style={{ width:"5vw", height:"5vw" }} />
+          <DeleteIcon/>
         </IconButton>
         72%
       </Card>

@@ -21,36 +21,34 @@ function App() {
   var renderBottomOfScreen = () => {
     if(!isManualOverride)
       return (
-        <div style={{ display: "inline-block", position: "fixed", right: "10vw", bottom: "10vh"}}>
+        <>
           <IconButton onClick={handleOverrideClick}>
-            <ControlCameraIcon 
-              style={{ width:"10vw", height:"10vw" }} 
-            />
+            <ControlCameraIcon />
           </IconButton>
-        </div>
+        </>
       )
     else
       return (
-        <div style={{ display: "inline-block", position: "fixed", right: "10vw", bottom: "25vh"}}>
+        <>
           <IconButton onClick={handleOverrideClick}>
-            <UndoIcon 
-              style={{ width:"10vw", height:"10vw" }} 
-            />
+            <UndoIcon />
           </IconButton>
           <ManuOverride />
-        </div>
+        </>
       )
-
   }
 
   return (
-    <div style={{ padding: "10px", paddingLeft: "30px" }}>
-      <Map width="35vw" height="55vh"/>
+    <div className="rootDiv">
       <OperatingStatus />
-      <Stats />
-      <OnOffSwitch />
-      {renderBottomOfScreen()}
-
+      <div className="infoContainer">
+        <Map width="25vw" height="25vw"/>
+        <Stats />
+      </div>
+      <div className="controlsContainer">
+        <OnOffSwitch />
+        {renderBottomOfScreen()}
+      </div>
     </div>
   );
 }
