@@ -10,11 +10,10 @@ function OnOffSwitch() {
   }
 
   return (
-    <div style={{ display: "inline-block", position: "fixed", left: "10vw", bottom: "10vh"}}>
+    <div>
       <IconButton onClick={handleClick}>
         <PowerSettingsNewIcon 
-          style={{ width:"10vw", height:"10vw" }} 
-          color={isOn ? "primary" : "info"}
+          color={isOn ? "secondary" : "off"}
         />
       </IconButton>
     </div>
