@@ -23,8 +23,8 @@
 }
 
 .controlsContainer .MuiSvgIcon-root {
-  height: 2vw;
-  width: 2vw;
+  height: 2em;
+  width: 2em;
   max-height: 100px;
   max-width: 100px;
 }
