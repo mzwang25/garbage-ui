@@ -9,6 +9,7 @@ import Stats from './Stats';
 import ControlCameraIcon from '@material-ui/icons/ControlCamera';
 import UndoIcon from '@material-ui/icons/Undo';
 import IconButton from '@material-ui/core/IconButton';
+import Camera from './Camera';
 
 function App() {
   
@@ -20,6 +21,7 @@ function App() {
 
   var renderBottomOfScreen = () => {
     if(!isManualOverride)
+      // Renders case of non-manual override
       return (
         <>
           <IconButton onClick={handleOverrideClick}>
@@ -28,6 +30,7 @@ function App() {
         </>
       )
     else
+      // Renders case of manual override
       return (
         <>
           <IconButton onClick={handleOverrideClick}>
@@ -43,6 +46,7 @@ function App() {
       <OperatingStatus />
       <div className="infoContainer">
         <Map width="25vw" height="25vw"/>
+        { isManualOverride ? <Camera width="25vw" height="25vw" /> : <></> }
         <Stats />
       </div>
       <div className="controlsContainer">

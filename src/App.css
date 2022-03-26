@@ -62,7 +62,7 @@
 }
 .statusBarCard .success {
   background-color: #4bb543;
-  width: 80vw;
+  width: 20vw;
   padding: 10px;
   text-align: center;
   color: white;
@@ -70,8 +70,15 @@
 
 .statusBarCard .warning {
   background-color: yellow;
-  width: 80vw;
   padding: 10px;
   text-align: center;
   color: white;
+}
+
+#camera {
+  background-color: #e1d9d1;
+  text-align: center;
+  padding: 10px;
+  min-width: 300px;
+  min-height: 300px;
 }
