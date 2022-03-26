@@ -76,6 +76,7 @@
 }
 
 #camera {
+  border-radius: 10px;
   background-color: #e1d9d1;
   text-align: center;
   padding: 10px;
