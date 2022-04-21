@@ -2,12 +2,9 @@
 function Camera( props ) {
   return (
     <div>
-      <div 
-        style={{ width: props.width, height: props.height }}
-        id="camera"
-      >
-        Future Camera...
-      </div>
+      <iframe
+       style={{ width: props.width, height: props.height }}
+       id="feed" src="http://192.168.1.214:5000" />
 
     </div>
   )
